@@ -4,139 +4,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services-page</title>
+    <title>Services Page</title>
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/services.css">
+
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
 </head>
 
 <body>
 
-    <!-- HEADER START -->
-    <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg bg-warning" data-bs-theme="text-white">
-            <div class="container-fluid">
-                🏪
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <!-- HEADER -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-warning sticky-top">
+<div class="container">
+<a class="navbar-brand fw-bold">🏪 Exzor</a>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
 
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
-                        <li class="nav-item"><a class="nav-link " href="product.html">Products</a></li>
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+<li class="nav-item"><a class="nav-link active fw-bold">Services</a></li>
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Gallery</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="photo_gallery.html">Photo</a></li>
-                                <li><a class="dropdown-item" href="video_gallery.html">Videos</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                    </ul>
-
-                    <form class="d-flex me-3">
-                        <input class="form-control me-2" type="search" placeholder="Search">
-                        <button class="btn btn-warning" type="submit">Search</button>
-                    </form>
-
-                    <a class="navbar-brand text-white" href="#">
-                        🏪 Exzor
-                    </a>
-
-
-                </div>
-            </div>
-        </nav>
-    </header>
-    <!-- HEADER END -->
-
-    <!-- section 1 start -->
+    <!-- MAIN -->
     <main>
-        <!-- Services Heading (Bootstrap Only) -->
-        <section class="py-5 bg-light mt-2 ">
-            <div class="container-fluid text-center">
 
-                <!-- Small Heading with lines -->
+        <!-- HEADING -->
+        <section class="py-5 bg-light text-center">
+            <div class="container">
                 <div class="d-flex justify-content-center align-items-center mb-3">
                     <hr class="w-25 border-warning opacity-100">
                     <span class="mx-3 text-warning fw-semibold">Our Services</span>
                     <hr class="w-25 border-warning opacity-100">
                 </div>
-
-                <!-- Main Heading -->
-                <h2 class="fw-bold text-black">Explore Our Services</h2>
+                <h2 class="fw-bold">Explore Our Services</h2>
             </div>
         </section>
-        <!-- section END -->
 
-        <!-- second section -->
-        <section class="mt-2">
-            <div class="container-fluid">
+        <!-- SERVICES SECTION -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-4">
 
-                <div class="row">
-                    <div class="col-md-3 border">
-                        <img class="p-2 " src="images/masterchef.jpg" alt="masterchef.jpg" height="50" width="50">
-                        <h5 class="text-dark fw-bold p-2">Master chefs</h5>
-                        <P>Our experienced chefs prepare delicious meals with passion and perfecion</P>
+                    <div class="col-md-3">
+                        <div class="service-box p-4 text-center shadow rounded bg-white h-100">
+                            <i class="bi bi-person-badge fs-1 text-warning"></i>
+                            <h5 class="fw-bold mt-3">Master Chefs</h5>
+                            <p>Experienced chefs prepare delicious meals with perfection.</p>
+                        </div>
                     </div>
-                    <div class="col-md-3 border">
-                        <img class="p-2 " src="images/food.jpg" alt="food.jpg" height="50" width="50">
-                        <h5 class="text-dark fw-bold p-2 border-end">Quality food</h5>
-                        <p>we use fresh ingredients to deliver healthy and tasty food every day</p>
+
+                    <div class="col-md-3">
+                        <div class="service-box p-4 text-center shadow rounded bg-white h-100">
+                            <i class="bi bi-egg-fried fs-1 text-warning"></i>
+                            <h5 class="fw-bold mt-3">Quality Food</h5>
+                            <p>Fresh ingredients for healthy and tasty food every day.</p>
+                        </div>
                     </div>
-                    <div class="col-md-3 border">
-                        <img class="p-2" src="images/onlinelogo.jpg" alt="onlinelogo.jpg" height="50" width="50">
-                        <h5 class="text-dark fw-bold p-2border-end"> Online order</h5>
-                        <p>Order your favorite food online quickly and easliy from our website</p>
+
+                    <div class="col-md-3">
+                        <div class="service-box p-4 text-center shadow rounded bg-white h-100">
+                            <i class="bi bi-cart-check fs-1 text-warning"></i>
+                            <h5 class="fw-bold mt-3">Online Order</h5>
+                            <p>Order your favorite food easily from our website.</p>
+                        </div>
                     </div>
-                    <div class="col-md-3 border">
-                        <img class="p-2" src="images/services.jpg" alt="services.jpg" height="50" width="50">
-                        <h5 class="text-dark fw-bold p-2 border-end"> 24/7 service</h5>
-                        <p>we are always ready to serve you anytime with fast and friendly support</p>
+
+                    <div class="col-md-3">
+                        <div class="service-box p-4 text-center shadow rounded bg-white h-100">
+                            <i class="bi bi-clock-history fs-1 text-warning"></i>
+                            <h5 class="fw-bold mt-3">24/7 Service</h5>
+                            <p>We are always ready to serve you anytime.</p>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </section>
-        <!-- section end -->
 
-        <!-- section 3 -->
-        <section class="mt-2 ">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-3 border">
-                        <img class="p-2" src="images/bevergres.jpg" alt="bevergres.jpg" height="50" width="50">
-                        <h5 class="text-dark fw-bold p-2 border-end">Hot Beverages</h5>
-                        <P>enjoy freshly brewed coffee and tea anytime.</P>
+        <!-- EXTRA SERVICES -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row g-4">
+
+                    <div class="col-md-3">
+                        <div class="service-box p-4 text-center shadow rounded bg-white h-100">
+                            <i class="bi bi-cup-hot fs-1 text-warning"></i>
+                            <h5 class="fw-bold mt-3">Hot Beverages</h5>
+                            <p>Enjoy fresh coffee and tea anytime.</p>
+                        </div>
                     </div>
-                    <div class="col-md-3 border">
-                        <img class="p-2" src="images/breakfast2.jpg" alt="breakfast2.jpg" height="50" width="50">
-                        <h5 class="text-dark fw-bold p-2 border-end">Breakfast</h5>
-                        <p>start your day with healty and tasty breakfast.</p>
+
+                    <div class="col-md-3">
+                        <div class="service-box p-4 text-center shadow rounded bg-white h-100">
+                            <i class="bi bi-sunrise fs-1 text-warning"></i>
+                            <h5 class="fw-bold mt-3">Breakfast</h5>
+                            <p>Start your day with healthy breakfast.</p>
+                        </div>
                     </div>
-                    <div class="col-md-3 border">
-                        <img class="p-2" src="images/dining.jpg" alt="dining.jpg" height="50" width="50">
-                        <h5 class="text-dark fw-bold p-2 border-end"> Family Dining</h5>
-                        <p>Perfect place to enjoy with family and friends</p>
+
+                    <div class="col-md-3">
+                        <div class="service-box p-4 text-center shadow rounded bg-white h-100">
+                            <i class="bi bi-people fs-1 text-warning"></i>
+                            <h5 class="fw-bold mt-3">Family Dining</h5>
+                            <p>Perfect place for family and friends.</p>
+                        </div>
                     </div>
-                    <div class="col-md-3 border">
-                        <img class="p-2" src="images/qservices.jpg" alt="qservices.jpg" height="50" width="50">
-                        <h5 class="text-dark fw-bold p-2 border-end"> Quick Service</h5>
-                        <p>Fast services without compromising quality</p>
+
+                    <div class="col-md-3">
+                        <div class="service-box p-4 text-center shadow rounded bg-white h-100">
+                            <i class="bi bi-lightning fs-1 text-warning"></i>
+                            <h5 class="fw-bold mt-3">Quick Service</h5>
+                            <p>Fast service without compromising quality.</p>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </section>
-        <!-- section end -->
-        <section class="bg-light py-5">
-            <div class="container text-center">
+
+        <!-- WHY CHOOSE US -->
+        <section class="py-5 text-white text-center bg-dark">
+            <div class="container">
                 <h2 class="fw-bold mb-4">Why Choose Us</h2>
-
                 <div class="row">
                     <div class="col-md-3">✔ Fresh Ingredients</div>
                     <div class="col-md-3">✔ Hygienic Kitchen</div>
@@ -146,59 +149,119 @@
             </div>
         </section>
 
-        <!-- footer start -->
-        <footer class="bg-dark text-light pt-3 pb-3 mt-2">
-            <div class="container-fluid">
+        <section class="review-section py-5">
+            <div class="container text-center">
+
+                <h2 class="fw-bold mb-5">What Our Customers Say</h2>
+
+                <div class="row g-4">
+
+                    <!-- Review 1 -->
+                    <div class="col-md-4">
+                        <div class="review-card p-4">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle mb-3"
+                                style="width:80px; height:80px; object-fit:cover;">
+                            <h5>Rahul Sharma</h5>
+
+                            <div class="text-warning mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+
+                            <p>"Amazing food and super fast service. Highly recommended!"</p>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="col-md-4">
+                        <div class="review-card p-4">
+                            <img src="images/pass2.jpg" class="rounded-circle mb-3"
+                            style="width:80px; height:80px; object-fit:cover">
+                            <h5>Arjun Patil</h5>
+
+                            <div class="text-warning mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+
+                            <p>"Very hygienic place and delicious food. Loved the experience!"</p>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="col-md-4">
+                        <div class="review-card p-4">
+                               <img src="images/pass.jpg" class="rounded-circle mb-3"
+                            style="width:80px; height:80px; object-fit:cover">
+                            <h5>Riya Joshi</h5>
+
+                            <div class="text-warning mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+
+                            <p>"Best restaurant for family dining. Great ambience!"</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- FOOTER -->
+        <footer class="bg-dark text-light pt-4 pb-3">
+            <div class="container">
                 <div class="row">
+
                     <div class="col-md-3">
                         <h5 class="text-warning">Company</h5>
                         <ul class="list-unstyled">
-                            <li>
-                                <a href="about.html" class="text-light text-decoration-none">About us </a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-light text-decoration-none">Contact us </a>
-                            </li>
-                            <li> Resevation </li>
-                            <li> privacy policy</li>
-                            <li>Terms & condition</li>
+                            <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                            <li><a href="contact.html" class="text-light text-decoration-none">Contact Us</a></li>
+                            <li>Reservation</li>
+                            <li>Privacy Policy</li>
+                            <li>Terms & Conditions</li>
                         </ul>
                     </div>
 
                     <div class="col-md-3">
-                        <h5 class="text-warning">Company</h5>
-                        <P> <i class="bi bi-geo-alt"></i>
-                            Dyaneshwar Chowk, nr. Pune Railway station Road, Pune Maharashta- 411044
-                        </P>
-                        <p> <i class="bi bi-telephone-outbound-fill"></i>
-                            +91 8766456616</p>
-                        <p> <i class="bi bi-envelope-check-fill"> </i>
-                            Exrorresturant22@gmail.com</p>
-                        <div>
-                            <i class="bi bi-facebook me-2"></i>
-                            <i class="bi bi-instagram me-2"></i>
-                            <i class="bi bi-twitter me-2"></i>
-                            <i class="bi bi-linkedin me-2"></i>
-                        </div>
+                        <h5 class="text-warning">Contact</h5>
+                        <p><i class="bi bi-geo-alt"></i> Pune, Maharashtra</p>
+                        <p><i class="bi bi-telephone"></i> +91 9876543210</p>
+                        <p><i class="bi bi-envelope"></i> info@restaurant.com</p>
                     </div>
+
                     <div class="col-md-3">
                         <h5 class="text-warning">Opening</h5>
-                        <P>Monady-saturday<br>10Am-11Pm</P>
-                        <P>Sunady <br>10Am-08PM</P>
+                        <p>Monday - Saturday<br>10 AM - 11 PM</p>
+                        <p>Sunday<br>10 AM - 8 PM</p>
                     </div>
+
                     <div class="col-md-3">
                         <h5 class="text-warning">Newsletter</h5>
-                        <p>Get latest offer & undate</p>
+                        <p>Get latest offers & updates</p>
                         <div class="input-group">
                             <input type="email" class="form-control" placeholder="Your email">
-                            <button class="btn btn-warning">SIGNUP</button>
+                            <button class="btn btn-warning">Signup</button>
                         </div>
                     </div>
+
                 </div>
 
-                <hr class="bg-light">
-                <!-- Bottom  -->
-                <div class="d-flex justify-content-between">
+                <hr>
+
+                <div class="text-center">
                     <p class="mb-0">© 2026 Your Restaurant. All Rights Reserved</p>
                 </div>
             </div>
@@ -206,24 +269,7 @@
 
     </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
