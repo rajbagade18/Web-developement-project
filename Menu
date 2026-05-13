@@ -1,1 +1,311 @@
-menu
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restaurant Menu</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .big-text {
+      font-size: 40px;
+      font-weight: bold;
+      color: rgb(51, 25, 25);
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .big-text:hover {
+      color: #ff4d4d;
+      text-shadow: 0px 0px 10px rgba(255, 77, 77, 0.7);
+      transform: scale(1.1);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .carousel-img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      transition: 0.3s;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="#">🏪 Exzor</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search food">
+        <button class="btn btn-warning">Search</button>
+      </form>
+
+    </div>
+  </div>
+</nav>
+
+<!-- HEADING -->
+<p class="big-text mt-3">🍽️ Welcome to Exzor Restaurant Menu</p>
+
+<!-- CAROUSEL -->
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="images/pexels-shootsaga-30622077.jpg" class="d-block w-100 carousel-img">
+    </div>
+
+    <div class="carousel-item">
+      <img src="images/pexels-shameel-mukkath-3421394-11161475.jpg" class="d-block w-100 carousel-img">
+    </div>
+
+    <div class="carousel-item">
+      <img src="images/pexels-kunal-lakhotia-781256899-29173105.jpg" class="d-block w-100 carousel-img">
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+
+<!-- MENU CARDS -->
+<div class="container mt-5">
+  <div class="row">
+
+    <!-- Dish 1 -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow h-100">
+        <img src="images/pexels-shootsaga-30622078.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">🍣 Sushi Salad Bowl</h5>
+          <p class="card-text">Fresh rice with seafood and vegetables.</p>
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal1">View</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 2 -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow h-100">
+        <img src="images/pexels-jdgromov-4669285.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">🥐 Croissant Breakfast Combo</h5>
+          <p class="card-text">Healthy morning combo with tea and salad.</p>
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal2">View</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 3 -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow h-100">
+        <img src="images/pexels-cihanyuce-12181749.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">🍗 Chicken Fingers</h5>
+          <p class="card-text">Crispy chicken with tasty sauces.</p>
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal3">View</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 4 -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow h-100">
+        <img src="images/pizza.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">🍕 Cheese Pizza</h5>
+          <p class="card-text">Loaded with extra cheese and toppings.</p>
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal4">View</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 5 -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow h-100">
+        <img src="images/burger.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">🍔 Chicken Burger</h5>
+          <p class="card-text">Juicy burger with crispy chicken patty.</p>
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal5">View</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 6 -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow h-100">
+        <img src="images/pasta.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">🍝 White Sauce Pasta</h5>
+          <p class="card-text">Creamy pasta with delicious white sauce.</p>
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal6">View</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 7 -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow h-100">
+        <img src="images/cake.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">🍰 Chocolate Cake</h5>
+          <p class="card-text">Soft chocolate cake with creamy layers.</p>
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal7">View</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- MODALS -->
+
+<!-- Modal 1 -->
+<div class="modal fade" id="modal1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Sushi Salad Bowl</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        Price: ₹450 <br>
+        A delicious Japanese-style sushi salad with fresh ingredients.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="modal2">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Croissant Combo</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        Price: ₹299 <br>
+        Perfect breakfast with croissant, tea, and salad.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="modal3">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Chicken Fingers</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        Price: ₹250 <br>
+        Crispy chicken fingers served with sauces.
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 4 -->
+<div class="modal fade" id="modal4">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Cheese Pizza</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        Price: ₹399 <br>
+        Delicious cheesy pizza with fresh toppings.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 5 -->
+<div class="modal fade" id="modal5">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Chicken Burger</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        Price: ₹199 <br>
+        Crispy chicken burger with fresh vegetables.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 6 -->
+<div class="modal fade" id="modal6">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>White Sauce Pasta</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        Price: ₹349 <br>
+        Creamy white sauce pasta with Italian herbs.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 7 -->
+<div class="modal fade" id="modal7">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Chocolate Cake</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        Price: ₹250 <br>
+        Rich chocolate cake with creamy chocolate layers.
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
